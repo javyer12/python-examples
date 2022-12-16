@@ -1,6 +1,6 @@
 def checkList():
   itemList = []
-  item = input("Insert your list, use (,) to separate items: ")
+  item = input("Insert your list, use (,) to separate numbers: ")
   # num variable keep integer item(number from the list)
   num = item.split(",")
   # loop to add each number to the list
@@ -14,8 +14,10 @@ def checkList():
     itemIndex = itemList.index(i)
     indexValue = itemIndex + firstNum
     if (indexValue != i):
-      print(f"oop!!, Error,list is not consecutive: wrong value: {i}, index: {itemIndex}")
+      print(f"oop!!,❌ Error,list is not consecutive: wrong value: {i}, index: {itemIndex}")
       break;
+    if (i == itemList[-1]):
+        print("Congratulation ⭐️ List is Consecutive")
 
   print(" ")
   print("The list you inserted:")
