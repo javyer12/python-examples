@@ -1,10 +1,18 @@
-## Check List
+## Check List Project
 
-* First Step:
+- Steps:
+
 ```
-   run python3 main.py
+  sh:
+    git clone
+    <create your venv folder with *python3 -m venv venv*>
+    source venv/bin/activate
+    pip3 install -r requirements.txt
+    python3 main.py
 ```
-* Second Step:
+
+- Test the project:
+
 ```
-  insert your list (separate numbers by ",")
+  insert numbers in your list (separate numbers by ",")
 ```
