@@ -1,0 +1,8 @@
+# de donde se iniciara el contenedor
+services:
+  app-csv:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    
+        
