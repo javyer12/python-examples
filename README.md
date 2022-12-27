@@ -5,7 +5,7 @@
 ```
   sh:
     git clone
-    <create your venv folder with *python3 -m venv venv*>
+    <create your venv folder with *python3 -m venv venv*> "Some cases, it's already made"
     source venv/bin/activate
     pip3 install -r requirements.txt
     python3 main.py
