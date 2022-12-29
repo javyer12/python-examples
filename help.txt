@@ -8,6 +8,10 @@ uvicorn main:app --reload
 docker-compose build
 docker-compose up -d = correrlo
 
+docker-compose build = para actualizar cambios en la app
+docker-compose down apagar el contenedor
+
+docker-compose exec app-csv bash = entrar a la bash del contenedor
 
 anyio==3.6.2
 argon2-cffi==21.3.0

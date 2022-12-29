@@ -11,18 +11,25 @@ def check_list():
         item_list.append(int_index)
 
     # get the first number of the list to make a dynamic comparison
-    first_num = item_list[0]
+    first_num_list = item_list[0]
+
+    # for item in item_list:
+    #     item_index = item_list.index(i)
+    #     print(f"item:  {item}, index: {item_index}")
 
     # loop to check the index and comparing index and number
     for i in item_list:
         item_index = item_list.index(i)
-        index_value = item_index + first_num
+        # index value es cada valor a comparar con el valor de la lista(i)
+        index_value = item_index + first_num_list
+        print(f"value {i},  index: {index_value}")
         if index_value != i:
             print(
                 f"oop!!,❌ Error,list is not consecutive: wrong value: {i}, index: {item_index}, fix your list.")
             break
+
         if i == item_list[-1]:
-            print("Congratulation ⭐️ List is Consecutive")
+            print("Congratulation ⭐️⭐️  List is Consecutive")
 
     print(" ")
     print("The list you inserted:")

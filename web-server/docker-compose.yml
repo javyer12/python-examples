@@ -1,10 +1,10 @@
 # de donde se iniciara el contenedor
 services:
-  app-csv:
+  web-server:
     build: 
       context: .
       dockerfile: Dockerfile
     volumes:
       - .:/app
-    
-        
+    ports:
+      - '80:80'
